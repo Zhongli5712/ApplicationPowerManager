@@ -53,8 +53,10 @@ Use API from `EnergyLib64.dll` to measure the average power usage when calling `
    - For example after running ApplicationPowerManager multiple times and obtains results `2.23, 1.97, 2.4, 5.52, 0.99` we can see that the estimation would be around `2.2` with values `5.52` and `0.99` be the outliner.
 2. Result output might be a message that says the result is 0 or there is an error somewhere, it might be caused by another application using a greater amount of power end during the estimating. You have to run the application again in this case.
 
+<!--
 ---
 ## Difficulties during implementation
 
 - The documentation for Intel Power Gadget API is not well maintained, some files are missing.
 - There are not many other tools that offer developer API.
+-->
