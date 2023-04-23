@@ -6,6 +6,7 @@ Wanting to find out how much power does a program need to run?
 
 Current tools such as Intel Power Gadget only measure the power usage or your computer, but not your program.
 ApplicationPowerManager solves your problem by allowing you to estimate the power usage of one application.
+
 ---
 ## Acknowledgement
 
