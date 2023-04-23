@@ -3,7 +3,6 @@
 ---
 ## Introduction
 Wanting to find out how much power does a program need to run?
-
 Current tools such as Intel Power Gadget only measure the power usage or your computer, but not your program.
 ApplicationPowerManager solves your problem by allowing you to estimate the power usage of one application.
 
@@ -26,6 +25,7 @@ ApplicationPowerManager use `EnergyLib64.dll` provided by [Intel Power Gadget](h
 3. Now you need to run the application you want to measure.
 4. Confirming your application is running by replying `yes`
 5. Wait and see the result.
+
 ---
 ## Design
 
@@ -45,12 +45,14 @@ Use API from `EnergyLib64.dll` to measure the average power usage when calling `
 2. After confirming you have run the application you want to measure, measure the power usage again and save into `PowerGadgetLogAfter.csv`.
 3. Retrieving the `Average Processer Power` and calculate the difference.
    1. Result output might be a message that says the result is 0 or there is an error somewhere. You need to run the application again.
+
 ---
 ## Current drawbacks
 
 1. ApplicationPowerManager only provides the estimation, and may generate different result if there is a background application that end or start during measuring and logging `PowerGadgetLogAfter.csv`, so multiple try should be done to obtain the closet estimation (run the ApplicationPowerManager multiple time and record the result, afterwards decide the closet estimation).
    - For example after running ApplicationPowerManager multiple times and obtains results `2.23, 1.97, 2.4, 5.52, 0.99` we can see that the estimation would be around `2.2` with values `5.52` and `0.99` be the outliner.
 2. Result output might be a message that says the result is 0 or there is an error somewhere, it might be caused by another application using a greater amount of power end during the estimating. You have to run the application again in this case.
+
 ---
 ## Difficulties during implementation
 
