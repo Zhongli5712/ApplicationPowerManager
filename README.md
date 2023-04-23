@@ -18,6 +18,7 @@ ApplicationPowerManager use `EnergyLib64.dll` provided by [Intel Power Gadget](h
 1. Make sure you have `Python` version 3.8 or later installed.
 2. Download the zip file in the [latest release](https://github.com/Zhongli5712/ApplicationPowerManager/releases) into a new folder, unzip it and run `ApplicationPowerManager.py` to run the ApplicationPowerManager
    1. One way to run is open terminal at current folder, run using command `python ApplicationPowerManager.py`
+   2. Measuring without charging in action (for laptop user) might produce more correct result.
 
 ### Using the application
 1. Upon running the ApplicationPowerManager, you will see the message `Please wait a moment...`.
@@ -52,7 +53,7 @@ Use API from `EnergyLib64.dll` to measure the average power usage when calling `
 1. ApplicationPowerManager only provides the estimation, and may generate different result if there is a background application that end or start during measuring and logging `PowerGadgetLogAfter.csv`, so multiple try should be done to obtain the closet estimation (run the ApplicationPowerManager multiple time and record the result, afterwards decide the closet estimation).
    - For example after running ApplicationPowerManager multiple times and obtains results `2.23, 1.97, 2.4, 5.52, 0.99` we can see that the estimation would be around `2.2` with values `5.52` and `0.99` be the outliner.
 2. Result output might be a message that says the result is 0 or there is an error somewhere, it might be caused by another application using a greater amount of power end during the estimating. You have to run the application again in this case.
-3. Measuring without charging in action (for laptop user) might produce more correct result.
+3. Measuring while charging in action (for laptop user) might produce incorrect result.
 
 <!--
 ---
