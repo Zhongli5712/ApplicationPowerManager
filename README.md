@@ -15,7 +15,7 @@ ApplicationPowerManager use `EnergyLib64.dll` provided by [Intel Power Gadget](h
 ## Setting up and getting started
 
 ### Setting up
-1. Make sure you have `Python` version 3.8 or later installed.
+1. Make sure you have `Python` version 3.9 or later installed.
 2. Download the zip file in the [latest release](https://github.com/Zhongli5712/ApplicationPowerManager/releases) into a new folder, unzip it and run `ApplicationPowerManager.py` to run the ApplicationPowerManager
    1. One way to run is open terminal at current folder, run using command `python ApplicationPowerManager.py`
    2. Measuring without charging in action (for laptop user) might produce more correct result.
